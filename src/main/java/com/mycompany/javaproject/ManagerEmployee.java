@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.mycompany.javaproject;
+
+
+public class ManagerEmployee extends BaseEmployee {
+    private int salary;
+
+    @Override
+    public int getSalary() {
+        return salary;
+    }
+
+    @Override
+    public void setSalary(int salary) {
+        if(salary<7000){
+            System.out.println(" Wrong ! ");///
+            this.salary=7000;
+        }
+        else
+        this.salary = salary;
+    }
+
+    public double primCalculator(double primAmount) {
+        return primAmount*18/100;
+    }
+
+  
+}
